@@ -1,0 +1,54 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)),
+    to(rgba(0, 0, 0, 0.7))), 
+    url(img/hero-2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    url(img/hero-2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+.form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    background-color: white;
+    margin: 6% auto;
+}
+
+.button-box {
+    width: 220px;
+    margin: 40px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px rgba(137, 233, 180, 0.644);
+    border-radius: 30px;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: black;
+}
+
+#btns {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100px;
+    background: 0 0 20px 9px rgba(8, 197, 93, 0.644);
+    border-radius: 30px;
+    transition: .5s;
+} */
