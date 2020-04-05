@@ -97,6 +97,13 @@ line-height: 145%;
     margin-bottom: 10px;
 }
 
+.icon-meduim {
+    font-size: 230%;
+    display: block;
+    color: #5cc77c;
+    margin-bottom: 10px;
+}
+
 .icon-small {
     display: inline-block;
     width: 30px;
@@ -465,7 +472,7 @@ cite img {
 }
 
 .plan-price {
-    font-size: 300%;
+    font-size: 200%;
     margin-bottom: 10px;
     font-weight: 100;
     color: #5cc773;
@@ -477,11 +484,12 @@ cite img {
 }
 
 .plan-price-meal {
-    font-size: 80%;
+    font-size: 50%;
 }
 
 .plan-box ul {
     list-style: none;
+    text-align: center;
 }
 
 .plan-box ul li {
@@ -619,4 +627,16 @@ footer p {
 .section-2 {
     padding: 80px 0;
     margin-bottom: 330px;
+}
+
+.centering {
+    text-align: center;
+}
+
+.account {
+    font-size: 40px;
+}
+
+.profit {
+    font-size: 25px;
 }

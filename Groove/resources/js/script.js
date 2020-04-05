@@ -115,25 +115,3 @@ $(document).ready(function() {
 
 
 
-
-class Character {
-    constructor (name, weapon) {
-        this.name = name;
-        this.weapon = weapon;
-    }
-    attack() {
-        return 'attack with ' + this.weapon
-    }
-}
-
-class Queen extends Character {
-    constructor(name, weapon,type) {
-        super(name,weapon)
-        this.type = type;
-    }
-    attack(hearts) {
-        return 'attack with ' + this.weapon
-    }
-}
-
-const victoria = new Queen('victoria','army','hearts')
