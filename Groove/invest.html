@@ -11,6 +11,9 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <script src="vendors/p5/p5.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script> -->
+        <script src="resources/js/sketch.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
         <title>Groove</title>
 
@@ -52,18 +55,30 @@
                     </div>
                     <div class="centering">
                         
-                        <p class="plan-price">you are to pay &#8358; 25,000 to the account below</p><span class="account"> <br>5mins</span> 
-                        <p class="plan-price-meal account"><i class="ion-clock icon-big"></i> make payment before the time runs out!</p>
+                        <p class="plan-price">you are to pay &#8358; 25,000 to the account below</p>
+                        <p class="account" id="timer">10:00 mins</p>
+                        <i class="ion-clock icon-big"></i> 
+                        <p class="plan-price-meal account" id="timeout">make payment to the account number below before the time runs out!</p>
                     </div>
-                    <div>
-                        <ul>
+                    <div id="account-details">
+                        
+                        <ul ><h5>Account Details</h5>
+                            <i class="ion-money icon-big"></i> 
                             <li><span class="account">zara chike isaac</span> </li>
                             <li><span class="account">0055833357</span> </li>
                             <li><span class="account">uba</span> </li>
+                            <div>
+                                <i class="ion-android-phone-portrait icon-meduim"></i> 
+                                <li><span class="account">08070418776</span> </li>
+                            </div>
+                            
                         </ul>
+                        <div class="accunt-details-1">
+                        </div>
                     </div>
-                    <div>
-                        <a href="#" class="btn btn-full">Confirm Payment</a>
+                    
+                    <div id="payment">
+                        <a href="#" class="btn btn-full" >Confirm Payment</a>
                     </div>
                 </div>
             </div>
