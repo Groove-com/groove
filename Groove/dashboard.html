@@ -26,16 +26,22 @@
     </head>
 <body>
     <section class="section-plans js--section-plans" id="plans">
-        <div class="row">
-            <!-- <img src="resources/img/logo-white.png" alt="Groove logo" class="logo">
-            <img src="resources/img/logo.png" alt="Groove logo" class="logo-black"> -->
-            
-            <ul class="main-nav js--main-nav">
-                <li><a href="/index.html">Logout</a></li>
-            </ul>
-            <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                <div class="row">
+            <nav>
+                <div class="row"><!-- 
+                    <img src="resources/img/logo-white.png" alt="Groove logo" class="logo">
+                    <img src="resources/img/logo.png" alt="Groove logo" class="logo-black"> -->
+                    <ul class="main-nav js--main-nav">
+                        <!-- <li><a href="/dashboard.html">Dashbord</a></li> --> <!-- should only be accecible if the user is logged in. in the case where the button is clicked the register page should be rendered -->
+                        <!-- <li><a href="/sign-in.html">Sign in</a></li>
+                        <li><a href="/sign-up.html">Sign up</a></li> -->
+                        <li><a href="/index.html">Logout</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>
         </div>
-
+     
         <div class="row">
            <h3 class="logo">HELLO, chinedu</h3> 
         </div>
@@ -93,7 +99,7 @@
                         <p class="plan-price-meal profit">That’s &#8358;14,000 payout!</p>
                     </div>
                     <div>
-                        <ul>
+                        <ul class="plan-box-ul-li">
                             <li>40% profit</li>
                             <li>Duration 7-72hr</li>
                             <li>3% referal bonus</li>
@@ -151,5 +157,12 @@
             </p>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="/resources/js/jquery.js"></script>
+    
 </body>
 </html>

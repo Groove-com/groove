@@ -181,10 +181,10 @@ input[type=submit]:active {
 }
 
 header {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)),
-    to(rgba(0, 0, 0, 0.7))), 
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)),
+    to(rgba(0, 0, 0, 0.5))), 
     url(img/hero-2.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
     url(img/hero-2.jpg);
     background-size: cover;
     background-position: center;
@@ -228,8 +228,8 @@ header {
 
 .main-nav li a:link, 
 .main-nav li a:visited {
-    padding: 8px 0;
-    color: #fff;
+   /*  padding: 8px 0; */
+    /* color: #fff; */
     text-decoration: none;
     text-transform: uppercase;
     font-size: 90%;
@@ -241,6 +241,7 @@ header {
 .main-nav li a:hover, 
 .main-nav li a:active {
     border-bottom: 2px solid #5cc77c;
+    color: #2ecc71;
 }
 
 .mobile-nav-icon {
@@ -252,7 +253,7 @@ header {
 
 .mobile-nav-icon i {
     font-size: 200%;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 .sticky {
     position: fixed;
@@ -275,7 +276,7 @@ header {
 .sticky 
 .main-nav li a:visited {
     padding: 17px 0;
-    color: rgb(117, 117, 117);
+    color: rgb(255, 255, 255);
 }
 
 .sticky .logo {
@@ -489,16 +490,55 @@ cite img {
 
 .plan-box ul {
     list-style: none;
-    text-align: center;
+    text-align: left;
 }
 
 .plan-box ul li {
     padding: 5px 0;
 }
 
-.contact-form {
+.contact-form-control {
     width: 60%;
-    margin: 0 auto;
+    margin: 15px auto;
+    position: relative;
+}
+
+.contact-form-control.success input {
+    border-color: #2ecc71;
+} 
+
+.contact-form-control.error input {
+    border-color: #e74e3c;
+} 
+
+.contact-form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 10px;
+    right: 240px;
+}
+
+.contact-form-control.success i.ion-checkmark-circled {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.contact-form-control.error i.ion-close-circled {
+    color: #e74e3c;
+    visibility: visible;
+}
+
+.contact-form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: -52px;
+    left: 247px;
+    font-size: 12px;
+}
+
+.contact-form-control.error small {
+    color: #e74e3c;
+    visibility: visible;
 }
 
 input[type=text], 
@@ -651,4 +691,24 @@ footer p {
     text-align: center;
     font-size: 30px;
 
+}
+
+#error_message {
+    margin-bottom: 20px;
+    padding: 0;
+    background: #fe8b8e;
+    text-align: center;
+    font-size: 14px;
+    transition: all 2s ease;
+    font-size: 20px;
+}
+
+#success_message {
+    margin-bottom: 20px;
+    padding: 0;
+    background: #90ff96;
+    text-align: center;
+    font-size: 14px;
+    transition: all 2s ease;
+    font-size: 20px;
 }
